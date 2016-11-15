@@ -5,6 +5,28 @@ Connie is a fuzzy clustering algorithm which is published under the name "Rederi
 
 The full version of the Connie paper can be found on [Science Direct](http://www.sciencedirect.com/science/article/pii/S0165011415004947) or on [abadpour.com](http://abadpour.com/files/pdf/Connie_full.pdf). 
 
+# Mathematics of "Connie"
+
+Connie minimizes the following cost function,
+
+[//]: # (\begin{align*}\Delta=\sum_{n=1}^N\omega_n\left[p_n^2\sum_{c=1}^Cf_{nc}^2u_{nc}+(1-p_n)^2UC^{-1}\right]\end{align*})
+![Delta](http://quicklatex.com/cache3/39/ql_d165b6f66f4954fd3623fa68113f2c39_l3.png)
+
+subject to,
+[//]: # (\begin{align*}\sum_{c=1}^Cf_{nc}=1, \forall n\end{align*})
+![sum fnc](http://quicklatex.com/cache3/da/ql_c1f8712f0d547e930e46a1a4716e85da_l3.png)
+
+Connie utilizes a Picard iteration using,
+
+[//]: # (\begin{align*}f_{nc}={{u_{nc}^{-1}}\over{\sum_{c^\prime}^Cu_{nc^\prime}^{-1}}}\end{align*})
+![fnc](http://quicklatex.com/cache3/86/ql_426c1608d2912935ead9f22b8cbc9686_l3.png)
+
+[//]: # (\begin{align*}p_n={{1}\over{1+CU^{-1}\sum_{c=1}^Cf_{nc}^2u_{nc}}}\end{align*})
+![pn](http://quicklatex.com/cache3/5e/ql_300f946a10b52ef9abbdbec94196745e_l3.png)
+
+Whereas, clusters are updated using the following weights,
+[//]: # (\begin{align*}\tilde{\omega}_{nc}=\omega_nf_{nc}^2p_{n}^2u_{nc}^\prime\end{align*})
+![wnc](http://quicklatex.com/cache3/e1/ql_3d28dcd16d57ec429d825ffd67a16de1_l3.png)
 
 # Execution of "Connie"
 Connie is developed in Python 2.7.6 and is tested in ipython notebook 4.1.2. In order to execute the code call
