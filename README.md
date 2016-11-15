@@ -6,14 +6,14 @@ Connie is a fuzzy clustering algorithm which is published under the name "Rederi
 The full version of the Connie paper can be found on [Science Direct](http://www.sciencedirect.com/science/article/pii/S0165011415004947) or on [abadpour.com](http://abadpour.com/files/pdf/Connie_full.pdf). 
 
 
-# Execution
+# Execution of "Connie"
 Connie is developed in Python 2.7.6 and is tested in ipython notebook 4.1.2. In order to execute the code call
 ```
 python runme.py
 ```
 or open runme.ipynb in ipython notebook.
 
-# Citation
+# Citation of "Connie"
 ```
 @article{Connie13,
 author="Arash Abadpour",
@@ -36,5 +36,5 @@ Image is copyright of its owner.
 # Acknowledgement
 I started working on Connie sometime in 2013, while I was a researcher at Epson Edge. The publication of the paper and the release of this work is courtesy of the management of Epson Edge.
 
-# Rights
-This work is open to use by anyone. I understand that this is not a proper description of the legal status of this work and intend to resolve this issue shortly. In the meantime, use this code, don't blow things up as you are using it, and stay tuned for the update.
+# Rights to "Connie"
+This work is open to use by anyone. I understand that this is not a proper description of the legal status of this work and intend to resolve this issue shortly. In the meantime, use this code, don't blow things up as you are using it, and stay tuned.
