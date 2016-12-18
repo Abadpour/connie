@@ -1,0 +1,14 @@
+{
+  "GENERATION": {
+    "CLUSTER": {
+      "POPULATION": 200,
+      "COUNT": 3,
+      "NOISE": 0.25
+      }
+  },
+	"CONVERGENCE": {
+		"ITERATION": 100,
+		"GRACE": 5,
+		"DELTA": 0.001
+	}
+}
